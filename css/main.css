@@ -1,0 +1,132 @@
+body {
+    background-image: url('background.jpg');
+    background-size: 200px;
+}
+.container {
+    padding: 1%;
+}
+.header{
+    position: relative;
+    left: 30%;
+    padding: 5px;
+    width: 50%;
+}
+.anthem { 
+    position: relative;
+    left: 25%;
+    padding-top: 5%;
+}
+.info { 
+    text-align: center;
+    position: relative;
+    /* left: 25%; */
+}
+
+.rainbow {
+  
+    /* Font options */
+   font-family: 'Pacifico', cursive;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+   font-size:60px;
+   
+    /* Chrome, Safari, Opera */
+   -webkit-animation: rainbow 5s infinite; 
+   
+   /* Internet Explorer */
+   -ms-animation: rainbow 5s infinite;
+   
+   /* Standar Syntax */
+   animation: rainbow 5s infinite; 
+ }
+ 
+ /* Chrome, Safari, Opera */
+ @-webkit-keyframes rainbow{
+   0%{color: orange;}	
+   10%{color: purple;}	
+     20%{color: red;}
+   30%{color: CadetBlue;}
+     40%{color: yellow;}
+   50%{color: coral;}
+     60%{color: green;}
+   70%{color: cyan;}
+   80%{color: DeepPink;}
+   90%{color: DodgerBlue;}
+     100%{color: orange;}
+ }
+ 
+ /* Internet Explorer */
+ @-ms-keyframes rainbow{
+    0%{color: orange;}	
+   10%{color: purple;}	
+     20%{color: red;}
+   30%{color: CadetBlue;}
+     40%{color: yellow;}
+   50%{color: coral;}
+     60%{color: green;}
+   70%{color: cyan;}
+   80%{color: DeepPink;}
+   90%{color: DodgerBlue;}
+     100%{color: orange;}
+ }
+ 
+ /* Standar Syntax */
+ @keyframes rainbow{
+     0%{color: orange;}	
+   10%{color: purple;}	
+     20%{color: red;}
+   30%{color: CadetBlue;}
+     40%{color: yellow;}
+   50%{color: coral;}
+     60%{color: green;}
+   70%{color: cyan;}
+   80%{color: DeepPink;}
+   90%{color: DodgerBlue;}
+     100%{color: orange;}
+ }
+
+ .flag {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3673cf;
+    box-shadow: inset -5px -5px 5px rgba(0,0,0,.6), 15px 15px 2px rgba(0,0,0,.04);
+    position: absolute;
+
+
+    @-webkit-keyframes moveX {
+        from { left: 0; } to { left: 480px; }
+      }
+      @-moz-keyframes moveX {
+        from { left: 0; } to { left: 480px; }
+      }
+      @-o-keyframes moveX {
+        from { left: 0; } to { left: 480px; }
+      }
+      @keyframes moveX {
+        from { left: 0; } to { left: 480px; }
+      }
+    -webkit-animation: moveX 3s linear 0s infinite alternate;
+    -moz-animation: moveX 3s linear 0s infinite alternate;
+    -o-animation: moveX 3s linear 0s infinite alternate;
+    animation: moveX 3s linear 0s infinite alternate;
+    @-webkit-keyframes moveY {
+        from { top: 0; } to { top: 280px; }
+      }
+      @-moz-keyframes moveY {
+        from { top: 0; } to { top: 280px; }
+      }
+      @-o-keyframes moveY {
+        from { top: 0; } to { top: 280px; }
+      }
+      @keyframes moveY {
+        from { top: 0; } to { top: 280px; }
+      }
+    animation: moveX 3.05s linear 0s infinite alternate, 
+    moveY 3.4s linear 0s infinite alternate;
+  }
+.flag {
+  position: relative;
+  top: 5%;
+  left: 5%;
+}
